@@ -22,39 +22,38 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="nav-bar">
+        <nav class="nav-bar container">
           <h4 class="nav-bar__title">Bruno Simmons</h4>
           <ul class="nav-bar__items">
-              <li><a href="#work">Work</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#about">About</a></li>
-            <li><a class="nav-bar__items__btn" href="#contact">CONTACT</a></li>
+              <div class="nav-bar-hidden">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+              </div>
+              <li><a class="nav-bar__items__btn" href="#contact">CONTACT</a></li>
           </ul>
         </nav>
-      </div>
     </header>
     <main>
-      <section class="section-header">
-        <div class="container">
+      <section class="section-header container">
           <div class="header-content">
             <h4 class="header-content__subtitle">
               Hey there, I’m Bruno Simmons 👋
             </h4>
             <h1 class="header-content__title">
-              Building digital products, brands and experience
+              Building digital products,<br>brands and experience
             </h1>
             <a class="header-content__btn" href="#contact">CONNECT WITH ME</a>
           </div>
           <div class="header-container">
-            <img src="images/icons/seperator.svg" alt="seperator" />
+            <a class="header-arrow" href="#footer"><img  src="images/icons/arrow-circle-down.svg" alt="arrow" /></a>
+            <div class="header-container-line"></div>
           </div>
         </div>
       </section>
 
-      <section class="section-works">
-        <div class="container">
-          <h2>The work I do,<br />and business I help.</h2>
+      <section class="section-works container">
+          <h2>The work I do,<br/>and business I help.</h2>
           <div class="works-container">
             <!-- column-1 -->
             <div class="works-container__col1">
@@ -76,10 +75,6 @@
                   faucibus tristique mattis sapien sed aenean purus.
                 </p>
               </div>
-
-              <a class="works__col1__btn" href="#"
-                >VISIT MY DRIBLE <i class="fa-brands fa-dribbble"></i
-              ></a>
             </div>
 
             <!-- column-2 -->
@@ -106,22 +101,30 @@
                 </p>
               </div>
             </div>
-          </div>
-        </div>
+            <div class="works-btn-container">
+              <a class="works-btn" href="#"
+              >VISIT MY DRIBLE <i class="fa-brands fa-dribbble"></i
+            ></a>
+            </div>
+           
+          </div>  
+          
       </section>
 
-      <section class="section-services">
-        <div class="container">
+      <section class="section-services container">
           <div class="services-container">
             <div class="services-context">
-              <h2 class="services-context__title">
-                What I do for my customers
-              </h2>
-              <p class="services-context__paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                feugiat fringilla lorem sed bibendum.
-              </p>
-              <a class="services-context__btn" href="#">CONNECT WITH ME</a>
+              <div class="services-context-container">
+                <h2 class="services-context__title">
+                  What I do for my customers
+                </h2>
+                <p class="services-context__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  feugiat fringilla lorem sed bibendum.
+                </p>
+                <a class="services-context__btn" href="#">CONNECT WITH ME</a>
+              </div>
+              
             </div>
             <div class="services-cards">
               <div class="services-cards__col1">
@@ -154,15 +157,15 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
 
-      <section class="section-logos">
-        <div class="container">
+      <section class="section-logos container">
+
           <div class="logos-title">
             <h5>CRAFTED DESIGNS FOR</h5>
             <div class="logos-title__line"></div>
           </div>
+
           <div class="logos-logos">
             <img src="images/logo01.png" alt="logo01" />
             <img src="images/logo02.png" alt="logo02" />
@@ -171,74 +174,77 @@
           </div>
 
           <div class="logos-title">
-            <div class="logos-title__line"></div>
+            <div class="logos-title__line-two"></div>
             <h5>MORE THAN 150+ BRANDS</h5>
           </div>
-        </div>
+
       </section>
 
-      <section class="section-about">
-        <div class="container">
+      <section class="section-about container">
           <div class="about-container">
             <div class="about-content">
               <h2>A bit about me</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 odio in et, lectus sit lorem id integer. Nunc odio in et, lectus
-                sit lorem id integer. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+                sit lorem id integer. 
+                <br> <br>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Nunc odio in et, lectus sit lorem id integer. 
+                <br> <br>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 odio in et, lectus. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
               </p>
             </div>
-            <div class="about-inner-container">
-              <img src="images/about-image.png" alt="about-me" />
-              <div class="about-inner-container__metrics">
-                <div class="about-inner-container__metric">
-                  <h2>15</h2>
-                  <h5>YEARS OF EXPERIENCE</h5>
-                  <div></div>
-                </div>
-                <div class="about-inner-container__metric">
-                  <h2>250+</h2>
-                  <h5>MOBILE APPS SHIPPED</h5>
-                  <div></div>
-                </div>
-                <div class="about-inner-container__metric">
-                  <h2>18</h2>
-                  <h5>DESIGN AWARDS</h5>
-                  <div></div>
-                </div>
-              </div>
-            </div>
+            <div class="about-img-metric">
+              
+              <img class="about-image" src="images/about-image.png" alt="about-me" />
+              
+              <div class="about-metrics">
+                  <div class="about-metric">
+                    <h2>15</h2>
+                    <h5>YEARS OF EXPERIENCE</h5>
+                    <div></div>
+                  </div>
+                  <div class="about-metric">
+                    <h2>250+</h2>
+                    <h5>MOBILE APPS SHIPPED</h5>
+                    <div></div>
+                  </div>
+                  <div class="about-metric">
+                    <h2>18</h2>
+                    <h5>DESIGN AWARDS</h5>
+                    <div></div>
+                  </div>
+              </div>  
+            </div> 
           </div>
-        </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container">
+    <footer id="footer" class="footer container">
+      <div class="footer-container">
         <div class="footer-content">
           <h3>Have an idea?</h3>
           <a href="#">Let’s talk ↗</a>
         </div>
         <div class="footer-contact">
-          <a href="#">hello@landify.design</a>
+          <div class="footer-contact-mail">
+            <a class="footer-mail" href="#">hello@landify.design</a>
+          </div>
+          
           <div class="footer-contact-social">
-            <div class="footer-social-row">
               <a href="#">Instagram</a>
               <a href="#">Dribbble</a>
               <a href="#">Behance</a>
-            </div>
-            <div class="footer-social-row">
               <a href="#">Twitter</a>
               <a href="#">Facebook</a>
               <a href="#">Youtube</a>
-            </div>
           </div>
         </div>
-      </div>
+      </div> 
     </footer>
+
   </body>
 </html>
